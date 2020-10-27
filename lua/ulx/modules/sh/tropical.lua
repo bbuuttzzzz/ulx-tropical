@@ -40,7 +40,8 @@ local addrotationmap = ulx.command( CATEGORY_NAME, "ulx addrotationmap",ulx.addr
 addrotationmap:addParam{ type=ULib.cmds.StringArg, hint="mapname" }
 addrotationmap:addParam{ type=ULib.cmds.StringArg, hint="tags", ULib.cmds.takeRestOfLine }
 addrotationmap:defaultAccess( ULib.ACCESS_SUPERADMIN )
-addrotationmap:help( "space separated. tags: [huge|big|medium|small|tiny][closed,open]")
+addrotationmap:help( "space separated tags. see source for full list")
+--tags: [huge|big|medium|small|tiny][closed,open]
 
 function ulx.forcemap( calling_ply, map_name )
     if not map_name or map_name == "" then
