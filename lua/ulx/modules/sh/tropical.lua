@@ -82,3 +82,10 @@ end
 local forcemapvote = ulx.command( CATEGORY_NAME, "ulx forcemapvote", ulx.forcemapvote, "!forcemapvote")
 forcemapvote:defaultAccess( ULib.ACCESS_ADMIN )
 forcemapvote:help( "start a mapvote early")
+
+function ulx.rollthedice( calling_ply )
+    GAMEMODE:RollTheDice( calling_ply )
+end
+
+local rollthedice = ulx.command( CATEGORY_NAME, "ulx rtd", ulx.rollthedice, "!rtd")
+rollthedice:defaultAccess( ULib.ACCESS_ALL )
