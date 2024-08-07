@@ -1,5 +1,5 @@
 -- skip if we aren't playing zs
-if (engine.ActiveGamemode() == "zombiesurvival") then
+if (engine.ActiveGamemode() == "zombiesurvival_modded") then
 
     local CATEGORY_NAME = "Zombie Survival"
 
