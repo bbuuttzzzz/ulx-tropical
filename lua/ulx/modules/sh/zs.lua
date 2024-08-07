@@ -1,5 +1,5 @@
 -- skip if we aren't playing zs
-if engine.ActiveGamemode().find("^zombiesurvival") then
+if (string.match(engine.ActiveGamemode(), "^zombiesurvival")then
 
     local CATEGORY_NAME = "Zombie Survival"
 
